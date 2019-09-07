@@ -3,7 +3,7 @@ const config = require('../../config/environment')()
 const EOL = require('os').EOL
 
 module.exports = {
-  description: 'Installs user-customisable version of semantic-ui',
+  description: 'Installs user-customisable version of fomantic-ui',
 
   normalizeEntityName() {
   },
@@ -20,8 +20,8 @@ module.exports = {
       )
     }).then(() => {
 
-      this.ui.writeLine('Installing semantic-ui')
-      return this.addPackageToProject('semantic-ui', config.SEMANTIC_UI_VERSION)
+      this.ui.writeLine('Installing fomantic-ui')
+      return this.addPackageToProject('fomantic-ui', config.SEMANTIC_UI_VERSION)
 
     })
 
