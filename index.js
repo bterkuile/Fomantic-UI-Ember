@@ -13,10 +13,10 @@ const defaults = {
     fonts: true
   },
   source: {
-    css: 'node_modules/semantic-ui-css',
-    javascript: 'node_modules/semantic-ui-css',
-    images: 'node_modules/semantic-ui-css/themes/default/assets/images',
-    fonts: 'node_modules/semantic-ui-css/themes/default/assets/fonts'
+    css: 'node_modules/fomantic-ui-css',
+    javascript: 'node_modules/fomantic-ui-css',
+    images: 'node_modules/fomantic-ui-css/themes/default/assets/images',
+    fonts: 'node_modules/fomantic-ui-css/themes/default/assets/fonts'
   },
   destination: {
     images: 'assets/themes/default/assets/images',
@@ -40,7 +40,7 @@ const mergeTrees = require('broccoli-merge-trees')
 const map = require('broccoli-stew').map
 
 module.exports = {
-  name: 'semantic-ui-ember',
+  name: 'fomantic-ui-ember',
   included: function (app) {
     // If the addon has the _findHost() method (in ember-cli >= 2.7.0), we'll just
     // use that. This helps support ember-engines, where we want to find 
@@ -51,8 +51,8 @@ module.exports = {
     let options;
     if (app && app.options['SemanticUI']) {
       options = app.options['SemanticUI']
-    } else if (app && app.options['semantic-ui-ember']) {
-      options = app.options['semantic-ui-ember']
+    } else if (app && app.options['fomantic-ui-ember']) {
+      options = app.options['fomantic-ui-ember']
     } else {
       options = {}
     }

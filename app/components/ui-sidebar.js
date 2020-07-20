@@ -1,1 +1,1 @@
-export { default } from 'semantic-ui-ember/components/ui-sidebar';
+export { default } from 'fomantic-ui-ember/components/ui-sidebar';

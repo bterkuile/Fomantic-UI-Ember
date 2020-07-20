@@ -1,1 +1,1 @@
-export { default } from 'semantic-ui-ember/components/ui-radio';
+export { default } from 'fomantic-ui-ember/components/ui-radio';
